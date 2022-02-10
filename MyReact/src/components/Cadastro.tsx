@@ -5,9 +5,8 @@ type CadastroProps = {
 export function Cadastro(props: CadastroProps){
 
     return (
-    <p>{props.text} Meu nome é george</p>
-
-    
+   // <p>{props.text} Meu nome é george</p>
+<h1></h1>    
    
     
     )
