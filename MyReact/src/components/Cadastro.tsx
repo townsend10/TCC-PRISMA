@@ -1,13 +1,11 @@
+import React from 'react'
 
-type CadastroProps = {
-    text : string
-}
-export function Cadastro(props: CadastroProps){
+export function Cadastro(){
 
     return (
-   // <p>{props.text} Meu nome é george</p>
-<h1></h1>    
-   
-    
+      
+    <input>
+    kkk
+    </input>
     )
 }

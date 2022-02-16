@@ -1,33 +1,37 @@
-import { useState } from "react"
-import { Cadastro } from "./components/Cadastro"
+import "./App.css"
+import { AppRoutes } from "./Routes"
 
-function App() {
+export function App() {
+
+
+
+
+  return(
+    <AppRoutes />
+
+
  
-  const [cadastro, setCadastro] = useState<string[]>([
-    'Meu nome : ',
-    'Meu nome : ',
-    'Cadastro 3',
-    'Cadastro 4',
-    'Cadastro 5'
-  ])
-  
-  function createCadastro() {
-setCadastro([...cadastro, 'gg'])
-  }
-  return (
+  )
+
+ 
+}
+/*
   <div>
 {cadastro.map(cadastros =>{
   return <Cadastro text={cadastros}/>
 })}
 
-<button onClick={createCadastro}>cadastrar</button>
+<button onClick={createCadastro} 
+style={{backgroundColor: 'red', 
+color:'black',
+position:'static',
+padding:'6px 12px',
+border:'10px'}}
+><h3>Cadastrar-se</h3>
+
+</button>
   </div>
 
-
-  )
-
-
-  
-}
-
+*/
 export default App
+

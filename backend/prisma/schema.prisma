@@ -19,5 +19,15 @@ model User {
 
   @@map("usuario")
 
+}
+model Venda{
+
+  id String @id @default(uuid())
+  name String
+  preco String
+  descricao String
+  localizacao String
+
 
 }
+
