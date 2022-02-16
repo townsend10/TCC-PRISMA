@@ -2,6 +2,7 @@ import { prisma } from '@prisma/client';
 import {Request, Response} from 'express'
 
 import { prismaClient } from '../database/prismaClient'
+import { AuthenticateUserService } from '../services/AuthenticateUserService';
 
 
 
@@ -9,21 +10,27 @@ import { prismaClient } from '../database/prismaClient'
 export class SelectUserController {
     async handle(request: Request, response: Response) {
        
-      const {id,CPF,email} = request.body
-
+      //const select = new AuthenticateUserService()
 
       const seletUser = await prismaClient.user.findMany({
-        where:{
-          
-        name:{
-          endsWith: "e"
-        }
-        }
-      })
-   
 
+       select:{
+         name: true,
+         email: true,
+         telefone:true,
+         CEP:true,
+         created_at:true
+         
+       }
+        }
+        
+       
+
+      )
+   
       return  response.json(seletUser)
-      
+  
+     
   
     //  return response.json("Usuarios encontrados: " + seletUser)
       

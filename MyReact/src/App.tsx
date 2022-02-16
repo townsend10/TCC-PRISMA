@@ -1,8 +1,13 @@
 import "./App.css"
 import { AppRoutes } from "./Routes"
+import axios from 'axios'
+import api from './services/api'
+
+
 
 export function App() {
 
+  
 
 
 
