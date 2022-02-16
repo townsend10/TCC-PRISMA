@@ -2,13 +2,17 @@ import { prisma } from '@prisma/client';
 import {Request, Response} from 'express'
 
 import { prismaClient } from '../database/prismaClient'
+import { AuthenticateUserService } from '../services/AuthenticateUserService';
 
 
 
 
 export class CreateUserController {
     async handle(request: Request, response: Response) {
-        const {CEP,CPF,email,name,senha,telefone} = request.body
+
+   
+       
+      const {CEP,CPF,email,name,senha,telefone} = request.body
 
       const user = await prismaClient.user.create({
         data: {

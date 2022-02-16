@@ -15,7 +15,7 @@ export function AppRoutes() {
 
             <Routes>
 
-                <Route path ="/page" element={<PaginaInicial/>}/> 
+                <Route path ="/inicial" element={<PaginaInicial/>}/> 
                 <Route path = "/cadastro" element={<Cadastro/>}/>
 
             </Routes>

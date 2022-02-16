@@ -4,6 +4,7 @@
     "@types/jest": "^27.4.0",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "axios": "^0.26.0",
     "express": "^4.17.2",
     "react": "^17.0.2",
     "react-router-dom": "^6.2.1",
@@ -13,6 +14,7 @@
     "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules backend/src/server.ts"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.16",
     "prisma": "^3.9.1",
