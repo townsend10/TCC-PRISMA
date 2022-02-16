@@ -10,7 +10,7 @@
     "react-scripts": "^5.0.0"
   },
   "scripts": {
-    "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules backend/src/server.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
