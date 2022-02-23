@@ -1,0 +1,14 @@
+.contentWrapper{
+
+   max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: grid;
+    //espaço para por a imagem
+    grid-template-columns: 1fr 453px;
+    //espaçamento entre colunas
+    column-gap: 120px;
+    position: relative;
+
+}
