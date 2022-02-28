@@ -1,8 +1,15 @@
 import style from './styles.module.scss';
 import logoImg from '../../assets/hollowed-boxes.svg'
+import {api} from '../../services/api'
+import { useEffect } from 'react';
 
 export function MessageList() {
 
+    useEffect(()=>{
+        api.get('all').then(response=>{
+            console.log(response.data)
+        })
+    }, [])
     return(
 
         
